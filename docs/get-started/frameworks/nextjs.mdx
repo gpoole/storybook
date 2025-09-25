@@ -439,11 +439,17 @@ Storybook for Next.js is a [framework](../../contribute/framework.mdx) that make
 
   {/* prettier-ignore-start */}
 
-  <CodeSnippets path="nextjs-styling-sass.md" />
+  <CodeSnippets path="nextjs-styling-sass-preview.md" />
 
   {/* prettier-ignore-end */}
 
   This will automatically include any of your [custom Sass configurations](https://nextjs.org/docs/pages/building-your-application/styling/sass#customizing-sass-options) in your `next.config.js` file.
+
+  {/* prettier-ignore-start */}
+
+  <CodeSnippets path="nextjs-styling-sass-config.md" />
+
+  {/* prettier-ignore-end */}
 
   ### CSS/Sass/Scss Modules
 
@@ -461,11 +467,27 @@ Storybook for Next.js is a [framework](../../contribute/framework.mdx) that make
 
   {/* prettier-ignore-start */}
 
-  <CodeSnippets path="nextjs-styling-styled-jsx.md" />
+  <CodeSnippets path="nextjs-styling-styled-jsx-component.md" />
 
   {/* prettier-ignore-end */}
 
   You can use your own babel config too. This is an example of how you can customize styled-jsx.
+
+  ```jsonc
+  // .babelrc (or whatever config file you use)
+  {
+    "presets": [
+      [
+        "next/babel",
+        {
+          "styled-jsx": {
+            "plugins": ["@styled-jsx/plugin-sass"]
+          }
+        }
+      ]
+    ]
+  }
+  ```
 
   ### Tailwind
 
