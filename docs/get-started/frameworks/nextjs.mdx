@@ -431,7 +431,9 @@ Storybook for Next.js is a [framework](../../contribute/framework.mdx) that make
 
   [`next/head`](https://nextjs.org/docs/pages/api-reference/components/head) is supported out of the box. You can use it in your stories like you would in your Next.js application. Please keep in mind, that the Head `children` are placed into the head element of the iframe that Storybook uses to render your stories.
 
-  ## Sass/Scss
+  ## Next.js Styling
+
+  ### Sass/Scss
 
   [Global Sass/Scss stylesheets](https://nextjs.org/docs/pages/building-your-application/styling/sass) are supported without any additional configuration as well. Just import them into [`.storybook/preview.js|ts`](../../configure/index.mdx#configure-story-rendering)
 
@@ -454,7 +456,7 @@ Storybook for Next.js is a [framework](../../contribute/framework.mdx) that make
   };
   ```
 
-  ## CSS/Sass/Scss Modules
+  ### CSS/Sass/Scss Modules
 
   [CSS modules](https://nextjs.org/docs/pages/building-your-application/styling/css-modules) work as expected.
 
@@ -475,7 +477,7 @@ Storybook for Next.js is a [framework](../../contribute/framework.mdx) that make
   }
   ```
 
-  ## Styled JSX
+  ### Styled JSX
 
   The built in CSS-in-JS solution for Next.js is [styled-jsx](https://nextjs.org/docs/pages/building-your-application/styling/css-in-js), and this framework supports that out of the box too, zero config.
 
@@ -530,11 +532,7 @@ Storybook for Next.js is a [framework](../../contribute/framework.mdx) that make
   }
   ```
 
-  ## PostCSS
-
-  Next.js lets you [customize PostCSS config](https://nextjs.org/docs/pages/building-your-application/configuring/post-css). Thus this framework will automatically handle your PostCSS config for you.
-
-  This allows for cool things like zero-config Tailwind! (See [Next.js' example](https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss)).
+  ### Tailwind
 
   For Tailwind, import your global CSS into [`.storybook/preview.js|ts`](../../configure/index.mdx#configure-story-rendering):
 
@@ -542,6 +540,12 @@ Storybook for Next.js is a [framework](../../contribute/framework.mdx) that make
   // .storybook/preview.js|ts
   import '../app/globals.css';
   ```
+
+  ### PostCSS
+
+  Next.js lets you [customize PostCSS config](https://nextjs.org/docs/pages/building-your-application/configuring/post-css). Thus this framework will automatically handle your PostCSS config for you.
+
+  This allows for cool things like zero-config Tailwind! (See [Next.js' example](https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss)).
 
   ## Absolute imports
 
